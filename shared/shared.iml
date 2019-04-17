@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":shared" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":shared" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="false" externalProjectId=":app">
+        <sourceSets>
+          <sourceSet>app_commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ebffc5be6dd864f12ef5b330c63c9d0c/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/f24faffcea9a6f0af5ad60390ec28b03/jars/classes.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/8a6e574e6c03fcf5b7915aca5a908846/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/cbcf35268d84be0f1a832e82d9db5026/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/cdebd4412c7ba197591db9b3003035b8/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/2212d16203ccfffd974e6ed1c52a67ed/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e5591ef14282d3385b013e428c2f2664/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/67049eaed0dc086eee12f0addf78914b/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/0b92199b05cbcf51491618be16bd9224/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/ed4c02335a8d0c4e20af9b24e8e53006/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/66d3573cfdca48cca4efcc18d5a59b6b/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/ca9a4e2a65f4838dbd47ca4b7991c8a7/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6c2c09deedcb41d113cf103cad1ffab6/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/2d6c8083380a6fa51edd24be05ebd8ec/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/7b3e56b10b6a453cf78600750d43336d/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/1fe84c03ec9a8ba9ac7b617c4f7328f4/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/b320c1e7fd8b4b0b847f5d22b23a9cb4/jars/classes.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/10d258e68f20247c04451aba732af8bd/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/48940ca70ef06e0f02bedb74be4e923b/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ac4446831f9c7edff6c5c1cbed4b1fcd/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2fa32162786e8c3d791ffcf48f94fc5f/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/762293d9f9b6d3d48110cdb4a87edb54/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/3c42416a611e187fb6b9ff8b7621c2b5/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/a6f2c224983c9ac4dcf8e9a681547d92/jars/classes.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/cf705d0f65e4f96519fb2997588e03e0/jars/classes.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8fb267adaf931747d1c8ff55b514ea68/jars/classes.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/malmstein/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/8cdd459d8b2f273029bc1e066b93c104/jars/classes.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/malmstein/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar:/Users/malmstein/_dev/android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.21/311c0d1cbb0a194e8712edaef7b92a8f0919ca26/kotlin-android-extensions-1.3.21.jar" />
+            </array>
+          </option>
+          <option name="multiPlatform" value="true" />
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/build" />
+        <option name="BUILDABLE" value="false" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
+    </content>
+    <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-metadata" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-metadata" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-metadata" level="project" />
+  </component>
+</module>

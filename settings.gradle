@@ -1,0 +1,4 @@
+rootProject.name = 'sharedphotos'
+include ':android'
+include ':shared'
+enableFeaturePreview('GRADLE_METADATA')

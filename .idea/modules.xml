@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared.iml" filepath="$PROJECT_DIR$/shared/shared.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared_androidMain.iml" filepath="$PROJECT_DIR$/shared/shared_androidMain.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared_androidTest.iml" filepath="$PROJECT_DIR$/shared/shared_androidTest.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared_commonMain.iml" filepath="$PROJECT_DIR$/shared/shared_commonMain.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared_commonTest.iml" filepath="$PROJECT_DIR$/shared/shared_commonTest.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared_iosMain.iml" filepath="$PROJECT_DIR$/shared/shared_iosMain.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared_iosTest.iml" filepath="$PROJECT_DIR$/shared/shared_iosTest.iml" group="shared" />
+      <module fileurl="file://$PROJECT_DIR$/sharedphotos.iml" filepath="$PROJECT_DIR$/sharedphotos.iml" />
+    </modules>
+  </component>
+</project>
