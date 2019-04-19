@@ -496,14 +496,14 @@ __attribute__((swift_name("InstagramResponseJson.$serializer")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("InstagramMetaJson")))
 @interface SharedInstagramMetaJson : KotlinBase
-- (instancetype)initWithCode:(int32_t)code errorType:(NSString * _Nullable)errorType errorMessage:(NSString * _Nullable)errorMessage __attribute__((swift_name("init(code:errorType:errorMessage:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCode:(int32_t)code errorType:(NSString *)errorType errorMessage:(NSString *)errorMessage __attribute__((swift_name("init(code:errorType:errorMessage:)"))) __attribute__((objc_designated_initializer));
 - (int32_t)component1 __attribute__((swift_name("component1()")));
-- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
-- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
-- (SharedInstagramMetaJson *)doCopyCode:(int32_t)code errorType:(NSString * _Nullable)errorType errorMessage:(NSString * _Nullable)errorMessage __attribute__((swift_name("doCopy(code:errorType:errorMessage:)")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (SharedInstagramMetaJson *)doCopyCode:(int32_t)code errorType:(NSString *)errorType errorMessage:(NSString *)errorMessage __attribute__((swift_name("doCopy(code:errorType:errorMessage:)")));
 @property (readonly) int32_t code __attribute__((swift_name("code")));
-@property (readonly) NSString * _Nullable errorType __attribute__((swift_name("errorType")));
-@property (readonly) NSString * _Nullable errorMessage __attribute__((swift_name("errorMessage")));
+@property (readonly) NSString *errorType __attribute__((swift_name("errorType")));
+@property (readonly) NSString *errorMessage __attribute__((swift_name("errorMessage")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -703,12 +703,19 @@ __attribute__((swift_name("PhotosRepository")))
 @interface SharedPhotosRepository : KotlinBase
 - (instancetype)initWithApi:(SharedApi *)api __attribute__((swift_name("init(api:)"))) __attribute__((objc_designated_initializer));
 - (void)loadFakeResultCallback:(SharedKotlinUnit *(^)(NSString *))callback __attribute__((swift_name("loadFakeResult(callback:)")));
+- (void)loadInstagramAsyncCallback:(SharedKotlinUnit *(^)(NSArray<SharedInstagramPhoto *> *))callback __attribute__((swift_name("loadInstagramAsync(callback:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("StringExtensionsKt")))
 @interface SharedStringExtensionsKt : KotlinBase
 @property (class, readonly) NSString *emptyString __attribute__((swift_name("emptyString")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PlatformKt")))
+@interface SharedPlatformKt : KotlinBase
++ (NSString *)platformName __attribute__((swift_name("platformName()")));
 @end;
 
 __attribute__((objc_subclassing_restricted))

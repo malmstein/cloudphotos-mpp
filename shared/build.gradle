@@ -4,15 +4,27 @@ apply plugin: 'kotlinx-serialization'
 kotlin {
 
     targets {
-        final def iOSTarget = System.getenv('SDK_NAME')?.startsWith("iphoneOS") ? presets.iosArm64 : presets.iosX64
+        fromPreset(presets.jvm, 'android')
 
-        fromPreset(iOSTarget, 'ios') {
+        def buildForDevice = project.findProperty("device")?.toBoolean() ?: false
+        def iosPreset = (buildForDevice) ? presets.iosArm64 : presets.iosX64
+        def iOSTarget = System.getenv('SDK_NAME')?.startsWith('iphoneos') \
+                       ? presets.iosArm64 : presets.iosX64
+        fromPreset(iosPreset, 'ios') {
             binaries {
                 framework('shared')
+                framework {
+                    // Disable bitcode embedding for the simulator build.
+                    if (!buildForDevice) {
+                        embedBitcode("disable")
+                    }
+                }
             }
         }
 
-        fromPreset(presets.jvm, 'android')
+        fromPreset(iOSTarget, 'ios') {
+            compilations.main.outputKinds('FRAMEWORK')
+        }
     }
 
     sourceSets {
@@ -78,23 +90,22 @@ task packForXcode(type: Sync) {
     }
 }
 
-// CODE GENERATION
-
-task regenerateColorsiOS(type: Exec) {
-    commandLine './../codegen/ColorGeniOS.kts'
-}
-
-task regenerateColorsAndroid(type: Exec) {
-    commandLine './../codegen/ColorGenAndroid.kts'
-}
-
-task regenerateDimensAndroid(type: Exec) {
-    commandLine './../codegen/DimenGenAndroid.kts'
-}
-
-task regenerateColors {
-    dependsOn regenerateColorsiOS
-    dependsOn regenerateColorsAndroid
-}
-
 tasks.build.dependsOn packForXcode
+
+task copyFramework {
+    def buildType = project.findProperty("kotlin.build.type") ?: "DEBUG"
+    dependsOn "link${buildType.toLowerCase().capitalize()}FrameworkIos"
+
+    doLast {
+        def srcFile = kotlin.targets.ios.binaries.getFramework(buildType).outputFile
+        def targetDir = buildDir
+        copy {
+            from srcFile.parent
+            into targetDir
+            include 'shared.framework/**'
+            include 'shared.framework.dSYM'
+        }
+    }
+}
+
+tasks.build.dependsOn copyFramework

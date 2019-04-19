@@ -19,7 +19,6 @@ class PhotosRepository(private val api: Api = Api()) {
   suspend fun loadInstagramPhotos(token: String): List<InstagramPhoto> {
     return api.instagramPhotos(token).data.map { InstagramPhoto.fromJson(it) }
   }
-
   fun loadFakeResult(callback: (String) -> Unit) {
     GlobalScope.apply {
       launch(ApplicationDispatcher) {
@@ -29,4 +28,14 @@ class PhotosRepository(private val api: Api = Api()) {
       }
     }
   }
+
+  fun loadInstagramAsync(callback: (List<InstagramPhoto>) -> Unit) {
+    GlobalScope.apply {
+      launch(ApplicationDispatcher) {
+        val photos = api.instagramPhotos("31057279.3b3c298.9aa60ae834b44549a776ff7666ae7824").data.map { InstagramPhoto.fromJson(it) }
+        callback(photos)
+      }
+    }
+  }
+
 }

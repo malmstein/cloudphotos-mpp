@@ -1,14 +1,11 @@
 package com.malmstein.sharedphotos.api
 
-import com.malmstein.sharedphotos.ApplicationDispatcher
 import com.malmstein.sharedphotos.model.ListMediaItemsResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.features.json.JsonFeature
 import io.ktor.client.features.json.serializer.KotlinxSerializer
 import io.ktor.client.request.get
 import io.ktor.http.takeFrom
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
 
 class HttpBinClient : RealNetworkClient() {

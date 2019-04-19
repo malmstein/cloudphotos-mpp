@@ -1,6 +1,7 @@
 package com.malmstein.sharedphotos.model
 
 import com.malmstein.sharedphotos.emptyString
+import kotlinx.serialization.Optional
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -23,8 +24,8 @@ data class InstagramResponseJson(
 @Serializable
 data class InstagramMetaJson(
   val code: Int,
-  val errorType: String?,
-  val errorMessage: String?
+  val errorType: String = emptyString,
+  val errorMessage: String = emptyString
 ) {
   companion object {
     fun empty(): InstagramMetaJson {
@@ -39,8 +40,8 @@ data class InstagramMetaJson(
 
 @Serializable
 data class InstagramPaginationJson(
-  val nextUrl: String,
-  val next_max_id: String
+  val nextUrl: String = emptyString,
+  val next_max_id: String = emptyString
 ) {
   companion object {
     fun empty(): InstagramPaginationJson {

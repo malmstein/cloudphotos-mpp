@@ -6,10 +6,10 @@ buildscript {
     ext.gradle_plugin = '3.3.2'
 
     repositories {
-        maven { url "https://dl.bintray.com/kotlin/kotlinx" }
-        maven { url "https://plugins.gradle.org/m2/" }
         google()
         jcenter()
+        maven { url "https://dl.bintray.com/kotlin/kotlinx" }
+        maven { url "https://plugins.gradle.org/m2/" }
     }
 
     dependencies {
@@ -19,13 +19,12 @@ buildscript {
     }
 }
 
-allprojects {
+subprojects {
     repositories {
-        maven { url "https://dl.bintray.com/kotlin/kotlinx" }
-        maven { url "https://dl.bintray.com/kotlin/ktor" }
         google()
         jcenter()
-        mavenCentral()
+        maven { url "https://dl.bintray.com/kotlin/kotlinx" }
+        maven { url "https://dl.bintray.com/kotlin/ktor" }
     }
 }
 
