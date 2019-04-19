@@ -57,5 +57,16 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 28 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-metadata" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-metadata" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-android" level="project" />
+    <orderEntry type="library" exported="" name="shared.shared-metadata" level="project" />
   </component>
 </module>
